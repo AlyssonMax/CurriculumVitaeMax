@@ -16,17 +16,22 @@ st.write("Olá! Me chamo Alysson, um engenheiro de dados entusiasmado e dedicado
 #cria uma função para carregar os dados fora do container
 #armazena os dados em cache para que não seja necessário recarregar numa segunda execução
 @st.cache_data
-def carrega_dados():
+def carrega_dados1():
     tabela_skill = pd.read_csv("SKILLS.csv")
     return tabela_skill
+
+@st.cache_data
+def carrega_dados2():
+    tabela_curso = pd.read_excel("Cursos.xlsx")
+    return tabela_curso
 st.write("---")
 
 #tabela de cursos
 st.write("CURSOS / CERTIFICADOS / GRADUAÇÕES")
 st.write("---")
 with st.container():
-        df = pd.read_excel("Cursos.xlsx")
-        st.dataframe(df)
+    df=carrega_dados2()
+    st.dataframe(df)
 
 st.write("---")
 
@@ -34,7 +39,7 @@ st.write("---")
 st.write("HABILIDADES E PROFICIÊNCIA")
 st.write("---")
 with st.container():
-    dados=carrega_dados()
+    dados=carrega_dados1()
     st.bar_chart(dados, x="Nível", y="Habilidade",color="Nível")
 
 st.write("---")
@@ -57,6 +62,6 @@ with st.container():
 st.write("---")
 with st.container():
     st.write("LinkedIn pelo [LINK](https://www.linkedin.com/in/alyssonbarbara/)")
-    
+
     st.write("Whatsapp pelo [LINK](https://wa.me/qr/QBC2WTSAJTDBN1)")
 st.write("---")
