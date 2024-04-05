@@ -41,7 +41,15 @@ st.write("---")
 with st.container():
     dados=carrega_dados1()
     st.bar_chart(dados, x="Nível", y="Habilidade",color="Nível")
-
+    st.write("LEGENDA:")
+    st.write("1-Iniciante")
+    st.write("2-Apto")
+    st.write("3-Intermediário")
+    st.write("4-Competente")
+    st.write("5-Experiente")
+    st.write("6-Avançado")
+    st.write("7-Diferenciado")
+    st.write("8-Mestre")
 st.write("---")
 #lista de soft Skills
 with st.container():
