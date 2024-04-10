@@ -55,7 +55,7 @@ with st.container():
     # Usando st.markdown com HTML para criar um divisor colorido
     st.markdown('<hr style="border:2px solid rainbow">', unsafe_allow_html=True)
     # lista das soft skills
-    soft_skills = "Flexibilidade: Adaptabilidade a novos ambientes e desafios.";"Resiliência Profissional: Habilidade de lidar com pressão e superar obstáculos.";"Aprendizado Contínuo: Compromisso com o desenvolvimento pessoal e profissional.";"Atuação junto de agentes multidisciplinares";"Resolução de Problemas: Identificar problemas e implementar soluções eficazes1.";"Ética de Trabalho: Demonstrar comprometimento, responsabilidade e dedicação ao trabalho"
+    soft_skills = "Flexibilidade: Adaptabilidade a novos ambientes e desafios.";"Resiliência Profissional: Habilidade de lidar com pressão e superar obstáculos.";"Aprendizado Contínuo: Compromisso com o desenvolvimento pessoal e profissional.";"Atuação junto de agentes multidisciplinares";"Resolução de Problemas: Identificar problemas e implementar soluções eficazes.";"Ética de Trabalho: Demonstrar comprometimento, responsabilidade e dedicação ao trabalho"
     # divide em linhas
     linhas = soft_skills.split(';')
     # imprime as linhas de soft skills
